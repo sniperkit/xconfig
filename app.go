@@ -10,7 +10,7 @@ import (
 	"github.com/k0kubun/pp"
 	colorable "github.com/mattn/go-colorable"
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/rai-project/vipertags"
+	"github.com/sniperkit/vipertags"
 	"github.com/spf13/viper"
 )
 
@@ -25,7 +25,7 @@ type appConfig struct {
 	FullName    string        `json:"full_name" config:"app.full_name" default:"rai project"`
 	Description string        `json:"description" config:"app.description"`
 	License     string        `json:"license" config:"app.license" default:"NCSA"`
-	URL         string        `json:"url" config:"app.url" default:"rai-project.com"`
+	URL         string        `json:"url" config:"app.url" default:"sniperkit.com"`
 	Secret      string        `json:"-" config:"app.secret"`
 	Color       bool          `json:"color" config:"app.color" env:"COLOR"`
 	IsDebug     bool          `json:"debug" config:"app.debug" env:"DEBUG"`
